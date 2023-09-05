@@ -1,0 +1,9 @@
+data_source postgres_db_external:
+  type: postgres
+  connection:
+    host: "172.18.0.1"
+    port: "5432"
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+    database: tuto_db
+  schema: ${AIRFLOW__ASTRO_SDK__SQL_SCHEMA}
